@@ -1,0 +1,33 @@
+﻿@page
+@model Ba_web.Pages.Tickets.IndexModel
+<br />
+<div class="container row p-0 m-0">
+  
+    <div class="col-8">
+        <h2 class="text-info"> Ticket list</h2>
+    </div>
+    <br />
+
+    <div class="col-3">
+        <a asp-page="Create" class="btn btn-info form-control text-white">Create new Ticket</a>
+    </div>
+
+    <div class="col-12" style="text-align: center">
+    </div>
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>AddedAt</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts{
+<script src="~/js/ticketList.js"></script>
+ }

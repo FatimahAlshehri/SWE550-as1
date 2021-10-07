@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="col-3">
+    <a asp-page="Login" class="btn border2 border22" style="border: solid thin #7FFFD4;">Log in </a>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">IT Tickets<img src="~/images/Tickets-icon.png" style="padding: 5px; width: 150px;"></h1>
+    @*<p>Learn about <a href="">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
+<br />
+<br />
+<br />
+<div class="text-info">
+    The term IT tickets can be used to refer to a lot of different types of support requests and activities that your IT function performs.
+    <br />The benefit of using tickets as a general record for these things instead of treating each independently is that they all involve similar data,
+    follow similar lifecycle/workflows, and are often addressed by the same people.
+    Treating them all as tickets helps drive staff productivity,  <br />
+    gives users fewer touchpoints into IT, and enables easier data analysis and reporting.
+</div>
